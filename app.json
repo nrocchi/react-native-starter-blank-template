@@ -1,8 +1,8 @@
 {
   "expo": {
     "name": "App Name",
-    "slug": "AppName",
-    "version": "1.0.0",
+    "slug": "app-name",
+    "version": "0.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -24,11 +24,17 @@
       "iosDisplayInForeground": true
     },
     "ios": {
-      "supportsTablet": true,
-      "buildNumber": "0.00.0.000",
-      "bundleIdentifier": "com.appname",
+      "supportsTablet": false,
+      "buildNumber": "0.0.0",
+      "bundleIdentifier": "com.appcompany.appname",
       "infoPlist": {
-        "NSLocationWhenInUseUsageDescription": "App description"
+        "CFBundleLocalizations" : ["fr"],
+        "CFBundleAllowMixedLocalizations": true, 
+        "CFBundleDevelopmentRegion" : "fr",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Cette application utilise la geolocation.",
+        "NSLocationWhenInUseUsageDescription": "Cette application utilise la geolocation.",
+        "NSPhotoLibraryUsageDescription": "Cette application utilise la galerie photo.",
+        "NSCameraUsageDescription": "Cette application utilise la caméra."
       },
       "config" : { "googleMapsApiKey": "GOOGLE_MAPS_API_KEY"}
     },
